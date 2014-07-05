@@ -1,3 +1,4 @@
+% As of Filipp's email 27.6.2014 
 % Die % bezeichnen Kommentare.
 % meshgrid und interp2 brauche ich, um Transformationen anwenden zu können.
 % bwboundaries, cell2mat und poly2mask brauche ich, um Bilder in Vektoren umzuwandeln und umgekehrt.
@@ -19,6 +20,9 @@ debug_on_error(1);
 % img = im2double ( imread ('http://t-h-schmidt.de/Filipp/stimulus2.jpg'));
 img = im2double(imread('stimulus2.jpg'));
 img(img>0)=1;
+
+% stop for debugging
+keyboard()
 
 % Define meshgrid
 [destX,destY] = meshgrid(1:size(img,2),1:size(img,1));
@@ -209,3 +213,4 @@ show(img_trans_sine)
 axis xy
 colormap gray
 title 'transformed' 
+

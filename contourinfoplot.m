@@ -1,4 +1,6 @@
-function surprisal = contourinfoplot(x, y, signed, resolution)
+function [surprisalmap] = contourinfoplot(x, y, signed, resolution)
+
+% function surprisal = contourinfoplot(x, y, signed, resolution)
 
 x = x(:); y = y(:);
 
