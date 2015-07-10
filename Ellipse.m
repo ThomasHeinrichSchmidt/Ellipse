@@ -22,7 +22,7 @@ img = im2double(imread('stimulus2.jpg'));
 img(img>0)=1;
 
 % stop for debugging
-keyboard()
+% keyboard()
 
 % Define meshgrid
 [destX,destY] = meshgrid(1:size(img,2),1:size(img,1));
